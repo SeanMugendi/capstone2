@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="park.js"></script>
+  <title>National Parks Search</title>
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/joshua.jpg');
+      background-size: cover;
+      filter: blur(2px);
+      z-index: -1;
+    }
+    
+    .container {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #5cb85c;
+      color: white;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #4ca74c;
+    }
+    
+    footer {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    header {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: white;
+      text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    }
+    
+    nav {
+      background-color: transparent;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      background-color: white;
+      color: #5cb85c;
+    }
+    
+    section {
+      padding: 20px;
+      text-align: center;
+    }  </style>
+</head>
+<body>
+  <body>
+    <header>
+      <h1>Enjoy the Outdoors</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="national_parks.html">National Parks</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+      </ul>
+    </nav>
+    
+    <section>
+      <h2 style="color: white;">Welcome to Enjoy the Outdoors</h2>
+      <div class="container">
+        <h1>National Parks Search</h1>
+        <form>
+          <select name="location">
+            <option value="" disabled selected>Select Location</option>
+            
+          </select>
+          <br>
+          <select name="parkType">
+            <option value="" disabled selected>Select Park Type</option>
+            
+          </select>
+          <br>
+          <input type="submit" value="Search">
+        </form>
+      </div>
+    </section>
+</body>
+</html>
+

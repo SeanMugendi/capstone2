@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enjoy the Outdoors - Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .background {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/joshuatre.jpeg');
+      background-size: cover;
+      filter: blur(2px);
+      z-index: -1;
+    }
+    
+    header {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    }
+    
+    nav {
+      background-color: transparent;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      background-color: white;
+      color: #5cb85c;
+    }
+    
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: #5cb85c;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+      background-color: #e0e0e0;
+    }
+    
+    footer {
+      background-color: transparent;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <header>
+    <h1>Enjoy the Outdoors</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="national_parks.html">National Parks</a></li>
+      <li><a href="mountains.html">Mountains</a></li>
+    </ul>
+  </nav>
+  
+  <section>
+    <h2 style="color: white;" >Welcome to Enjoy the Outdoors</h2>
+    <p style="color: white;">At Enjoy the Outdoors, we are passionate about connecting people with nature and providing valuable information about national parks and mountains.</p>
+    <p style="color: white;">Explore the beauty of nature, find the perfect hiking trails, and discover stunning landscapes.</p>
+    <a class="cta-button" href="national_parks.html">Search National Parks</a>
+    <a class="cta-button" href="mountains.html">Explore Mountains</a>
+  </section>
+  
+  <footer>
+    &copy; 2023 Enjoy the Outdoors. All rights reserved.
+  </footer>
+</body>
+</html>

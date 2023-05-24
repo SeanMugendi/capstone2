@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>National Parks Search</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Enjoy the Outdoors</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="national_parks.html">National Parks</a></li>
+      <li><a href="mountains.html">Mountains</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Welcome to Enjoy the Outdoors</h2>
+    <div class="container">
+      <h1>National Parks Search</h1>
+      <label for="locationSelect">Search by Location:</label>
+      <select name="location" id="locationSelect">
+        <option value="" disabled selected>Select Location</option>
+        <!-- Add options dynamically from the locationsArray using JavaScript -->
+      </select>
+
+      <label for="stateSelect">Search by State:</label>
+      <select name="state" id="stateSelect">
+        <option value="" disabled selected>Select State</option>
+        <!-- Add options dynamically from the locationsArray using JavaScript -->
+      </select>
+
+      <br>
+      <button onclick="search()">Search</button>
+
+      <div id="results"></div>
+    </div>
+  </section>
+
+  <script src="park.js"></script>
+</body>
+</html>
