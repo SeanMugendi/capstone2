@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="park.js"></script>
   <title>National Parks Search</title>
   <style>
-body {
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       position: relative;
     }
     
@@ -21,7 +19,7 @@ body {
       height: 100%;
       background-image: url('images/joshua.jpg');
       background-size: cover;
-      filter: blur(2px);
+      filter: blur(6px);
       z-index: -1;
     }
     
@@ -85,7 +83,7 @@ body {
     }
     
     nav {
-      background-color: transparent;
+      background-color: #185730;
       padding: 10px;
       text-align: center;
     }
@@ -113,46 +111,58 @@ body {
     
     nav ul li a:hover {
       background-color: white;
-      color: #5cb85c;
+      color: #185730;
     }
     
     section {
       padding: 20px;
       text-align: center;
-    }  </style>
+    }
+
+    /* Added CSS rule for resultsContainer */
+    #resultsContainer {
+      color: white;
+    }
+    .website-name {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
 <body>
-  <body>
-    <header>
-      <h1>Enjoy the Outdoors</h1>
-    </header>
+  <div class="website-name"><a href="index.html" style="color: white; text-decoration: none;">ENJOY THE OUTDOORS</a></div> 
+
+  <nav>
+    <ul>
+      <li><a href="nationalparks.html">National Parks</a></li>
+      <li><a href="mountains.html">Mountains</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 style="color: white;">Welcome to Enjoy the Outdoors</h2>
+    <div class="container">
+      <h1>National Parks Search</h1>
+      <form>
+        <select id="locationSelect">
+          <option value="" disabled selected>Select Location</option>
+        </select>
+        <br>
+        <select id="parkTypeSelect">
+          <option value="" disabled selected>Select Park Type</option>
+        </select>
+        <br>
+        <input type="submit" value="Search" onclick="search(event)">
+      </form>
+    </div>
+    <div id="resultsContainer"></div>
     
-    <nav>
-      <ul>
-        <li><a href="national_parks.html">National Parks</a></li>
-        <li><a href="mountains.html">Mountains</a></li>
-      </ul>
-    </nav>
-    
-    <section>
-      <h2 style="color: white;">Welcome to Enjoy the Outdoors</h2>
-      <div class="container">
-        <h1>National Parks Search</h1>
-        <form>
-          <select name="location">
-            <option value="" disabled selected>Select Location</option>
-            
-          </select>
-          <br>
-          <select name="parkType">
-            <option value="" disabled selected>Select Park Type</option>
-            
-          </select>
-          <br>
-          <input type="submit" value="Search">
-        </form>
-      </div>
-    </section>
+  </section>
+
+  <script src="demoo.js"></script>
 </body>
 </html>
-
